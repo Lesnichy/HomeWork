@@ -14,15 +14,19 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
 
-        tryGit()
-        hwCheck ()
+        print("Задание из самостоятельной работы")// Написать метод, в который передается номер дня (1-7) и в консоль выводится день недели (Понед - Воскр)
+
+        dayOfWeek(numberOfTheDay: 3)
+
+        print("===================================================")
+
     }
 
-        func tryGit() {
-            print("Hello GIThub!")
-        }
-
-    func hwCheck () {
-        print("Проверка рабоыт гитхаб")
+    func dayOfWeek(numberOfTheDay: Int) {
+            let days = [" ", "Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота", "Воскресенье"]
+            print(days[numberOfTheDay])
     }
+
+
+
 }
